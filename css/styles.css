@@ -1,11 +1,8 @@
 html {
--webkit-tap-highlight-color: rgba(0, 0, 0, 0);
--webkit-touch-callout: none;
--webkit-user-select: none;
-overflow: hidden;
-position: absolute;
-width: 100%;
-height: 100%;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 body {
@@ -17,100 +14,28 @@ body {
   padding: 0;
 }
 
-#main {
-	margin: 0 auto;
-	min-width: 300px;
-	max-width: 1000px;
-	background: #fff;
-}
-
-#banner{
-	margin: 0 auto;
-	border: 2px solid #f00;
-}
-#bannerimg{
+#header{
+	height: 300px;
 	width: 100%;
+	background: -webkit-linear-gradient(left, #7B1113 , #014421); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(right, #7B1113 , #014421); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(right, #7B1113 , #014421); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to right, #7B1113 , #014421); /* Standard syntax */
+  	padding-top: 40px;
+  	border-bottom-left-radius: 30em 3em;
+  	border-bottom-right-radius: 30em 3em;
 }
-#logomenu{
+
+#header_up{
 	margin: 0 auto;
-	background: #7b1113; /*UP maroon hex ;) */
-	vertical-align: middle;
-}
-#surplogo{
-	width: 50%;
-}
-#mainmenu {
-	width: 50%;
-	float:right;
-	margin: 0;
-	padding: 0;
-	min-width: 150px;
-	text-align: center;
-}
-.menu-element{
-	display: inline-block;
-	padding: .4vw;
-	margin-top: 1.2vw;
-	margin-left: 0;
-	margin-right: 0;
-	border: solid #000 1px;
-	position: relative;
-}
-#mainmenu a {
-	font-size: 1.2vw;
-	color: #000;
-	vertical-align: middle;
-}
-@media (min-width: 1400px) {
-	#mainmenu a {
-		font-size: 14px;
-	}
+	display: table;
+	color: #FFF;
+	font-size: 2em;
 }
 
-#content{
-	width: 100%;
-}
-
-#slideshow{
-		background-color: #0f0;
-		width: 75%;
-		height: auto;
-		float: left;
-		display: inline-block;
-}
-#timer{
-		width: 25%;
-		height: auto;
-		background-color:#f00;
-		float: left;
-		display: inline-block;
-}
-#news-articles{
-		background-color: #00f;
-		width: 75%;
-		height: auto;
-		float: left;
-		display: inline-block;
-}
-#announcements{
-		width: 25%;
-		height: auto;
-		background-color:#f0f;
-		float: left;
-		display: inline-block;
-}
-#dropdown{
-    display: none;
-    position: absolute;
-	z-index: 1000;
-	list-style: none;
-	padding: 0;
-	left: 0;
-	top: 30px;
-}
-#dropdown a:hover{
-	text-decoration:overline;
-}
-.menu-element:hover #dropdown{
-	display: block;
+#updlogo, #surplogo { 
+	height: 80px;
+	width: auto;
+	margin-left: 50px;
+	margin-right: 50px;
 }
