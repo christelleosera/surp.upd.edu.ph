@@ -1,41 +1,115 @@
-html {
-	overflow: hidden;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
+@media screen and (min-width: 750px) {
+	html {
+		overflow: hidden;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
 
-body {
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+	body {
+	  overflow: hidden;
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  margin: 0;
+	  padding: 0;
+	}
 
-#header{
-	height: 300px;
-	width: 100%;
-	background: -webkit-linear-gradient(left, #7B1113 , #014421); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(right, #7B1113 , #014421); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(right, #7B1113 , #014421); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(to right, #7B1113 , #014421); /* Standard syntax */
-  	padding-top: 40px;
-  	border-bottom-left-radius: 30em 3em;
-  	border-bottom-right-radius: 30em 3em;
-}
+	#header{
+		height: 250px;
+		width: 100%;
+		background: -webkit-linear-gradient(left, #7B1113 , #014421); /* For Safari 5.1 to 6.0 */
+	  	background: -o-linear-gradient(right, #7B1113 , #014421); /* For Opera 11.1 to 12.0 */
+	  	background: -moz-linear-gradient(right, #7B1113 , #014421); /* For Firefox 3.6 to 15 */
+	  	background: linear-gradient(to right, #7B1113 , #014421); /* Standard syntax */
+	  	border-bottom-left-radius: 30em 3em;
+	  	border-bottom-right-radius: 30em 3em;
+	}
 
-#header_up{
-	margin: 0 auto;
-	display: table;
-	color: #FFF;
-	font-size: 2em;
-}
+	#header_up{
+		margin: 0 auto;
+		display: table;
+		position: relative;
+	  	top: 15%;
+	}
 
-#updlogo, #surplogo { 
-	height: 80px;
-	width: auto;
-	margin-left: 50px;
-	margin-right: 50px;
+	#header_surp{
+		margin: 0 auto;
+		display: table;
+		text-align: center;
+		position: relative;
+	  	top: 15%;
+	}
+
+	.header_title{
+		color: #FFF;
+		font-size: 32px;
+		margin: 0 15px 0 15px;
+	}
+
+	.header_subtitle{
+		color: #FFF;
+		font-size: 21px;
+	}
+
+	#updlogo, #surplogo { 
+		height: 60px;
+		width: auto;
+	}
+
+	#menu_container {
+		position: relative;
+	  	top: 35%;
+	  	margin: 0 auto;
+	  	display: table;
+	}
+
+	#mainmenu {
+		float:right;
+		margin: 0;
+		padding: 0;
+		min-width: 150px;
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.menu-element{
+		display: inline-block;
+		position: relative;
+		padding-left: 15px;
+		padding-right: 15px;
+		border-right: 2px solid #FFF;
+	}
+	.menu-element-last{
+		display: inline-block;
+		position: relative;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#menu_container a {
+		color: #FFF;
+		vertical-align: middle;
+	}
+
+	#dropdown {
+		display: none;
+		position: absolute;
+		z-index: 1000;
+		list-style: none;
+		padding: 0;
+		left: 0;
+		top: 30px;
+	}
+
+	#dropdown a:hover{
+		text-decoration:overline;
+	}
+
+	.menu-element:hover #dropdown{
+		display: block;
+	}
+}
+@media screen and (max-width: 750px) {
+
 }
