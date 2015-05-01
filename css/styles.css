@@ -1,11 +1,13 @@
-@media screen and (min-width: 750px) {
+
 	html {
 		position: absolute;
 		width: 100%;
 		height: 100%;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: lighter;
 	}
 
-	body {	  position: absolute;
+	body {
 	  width: 100%;
 	  height: 100%;
 	  margin: 0;
@@ -13,76 +15,79 @@
 	}
 
 	#header{
-		height: 250px;
+		position: relative;
+		height: 30vmax;
 		width: 100%;
 		background: -webkit-linear-gradient(left, #7B1113 , #014421); /* For Safari 5.1 to 6.0 */
 	  	background: -o-linear-gradient(right, #7B1113 , #014421); /* For Opera 11.1 to 12.0 */
 	  	background: -moz-linear-gradient(right, #7B1113 , #014421); /* For Firefox 3.6 to 15 */
 	  	background: linear-gradient(to right, #7B1113 , #014421); /* Standard syntax */
+		vertical-align: middle;
+		display: table;
 	}
-
+	#header_text{
+		display: table-cell;
+		vertical-align: middle;
+		letter-spacing: 0.5;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 	#header_up{
 		margin: 0 auto;
 		display: table;
-		position: relative;
-	  	top: 15%;
+	  	text-align: center;
 	}
 
 	#header_surp{
 		margin: 0 auto;
 		display: table;
 		text-align: center;
-		position: relative;
-	  	top: 15%;
 	}
 
 	.header_title{
 		color: #FFF;
-		font-size: 32px;
+		font-size: 3.6vmax;
 		margin: 0 15px 0 15px;
+		letter-spacing: 0.75;
 	}
 
 	.header_subtitle{
 		color: #FFF;
-		font-size: 21px;
+		font-size: 2vmax;
 	}
 
 	#updlogo, #surplogo { 
-		height: 60px;
+		height: 6vmax;
 		width: auto;
 	}
 
 	#menu_container {
-		position: relative;
-	  	top: 35%;
 	  	margin: 0 auto;
 	  	display: table;
-	  	margin-top: 20px;
-	  	background-color: #595C5E;
-	  	width: 750px;
+	  	background-color: #555759;
+	  	width: 100%;
 	}
 
 	#mainmenu {
 		width: 100%;
 		margin: 0 auto;
 		padding: 5px;
-		min-width: 150px;
 		text-align: center;
-		font-size: 16px;
+		font-size: 1.3vmax;
 	}
 
 	.menu-element{
 		display: inline-block;
 		position: relative;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 2vw;
+		padding-right: 2vw;
 		border-right: 2px solid #FFF;
 	}
 	.menu-element-last{
 		display: inline-block;
 		position: relative;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 2vw;
+		padding-right: 2vw;
 	}
 
 	#menu_container a {
@@ -96,12 +101,23 @@
 		z-index: 1000;
 		list-style: none;
 		padding: 0;
-		left: 0;
-		top: 30px;
+		background-color: #000;
+		list-style-type: none;
+        list-style-position:inside;
+        left: 0vw;
+        text-align: center;
+        width: 100%;
+        padding: 2px 0 2px 0;
 	}
+	#dropdown li{
 
-	#dropdown a:hover{
-		text-decoration:overline;
+	}
+	#dropdown a{
+		white-space:nowrap;
+		font-size: 1.1vmax;
+	}
+	#dropdown li:hover{
+		background-color: #999;
 	}
 
 	.menu-element:hover #dropdown{
@@ -109,23 +125,30 @@
 	}
 
 	#main {
-		width: 750px;
-		height: 750px;
 		margin: 0 auto;
-		margin-top: 25px;
-	/*	background-color: #000;*/
+		margin-top: 1vmax;
 	}
 	#left-panel{
 		width: 65%;
+		position: relative;
 	}
 
 	#news-slider {
-		width: 100%;
-		overflow: hidden;
+		width: 80%;
+		height: auto;
 		margin-top: 0;
-		height: 400px;
+		background-color: #000;
+		overflow: hidden;
+		position: absolute;
+		right: 0;
+		overflow: hidden;
 	}
-	
+	figure.slider figure img {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 auto ;
+	}
 	figure {
 		margin: 0;
 	}
@@ -134,33 +157,34 @@
 		width: 500%;
 		font-size: 0;
 		-webkit-animation: slide 8s linear;
-		animation: slide 8s linear;
-		background: rgba(0,0,0,0.3);
+		animation: slide 2s linear;
 	}
 	@-webkit-keyframes slide{
-		50% { left: 0%; }
-		70% { left: -100%; }
+		40% { left: 0%; opacity: 1}
+		70% { left: -100%; opacity: 0.5}
 	}
 	figure.slider figure {
 		width: 20%;
-		height: auto;
+		height: 100%;
 		display: inline-block;
 		position: inherit;
 	}
-	figure.slider figure img{
-		max-width: 100%;
-		height: auto;
-		/*position: absolute;
-		top: 0;*/
-	}
 	figure.slider figure figcaption {
 		position: absolute; bottom: 0;
-		background: rgba(0,0,0,0.3);
+		background: rgba(0,0,0,0.5);
 		color: #fff; width: 100%;
-		font-size: 2rem; padding: .6rem;
+		font-size: 2vmax; padding: .6vmax;
 		transition: .5s bottom;
+		font-weight: 900;
 	}
-}
 @media screen and (max-width: 750px) {
-
+	
 }
+@media screen and (orientation:portrait) {
+    #news-slider {
+		width: 100%;
+	}
+	#updlogo, #surplogo{
+		display: none;
+	}
+ }
