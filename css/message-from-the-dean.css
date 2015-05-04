@@ -1,0 +1,29 @@
+#message{
+	float: right;
+	width: 90%;
+	animation: down 1s ease forwards;
+}
+
+#message-dean-img-container{
+	float: left;
+	margin: 0 1vmax 0 0;
+	background-color: #E0E0E0;
+	padding: 1vmax;
+}
+#message-dean-img{
+	width: 25vmax;
+	height: auto;
+}
+#message-dean-name{
+	font-size: 1.1vmax;
+	font-weight: 900;
+}
+#message p{
+	margin: 0;
+	text-align: justify;
+	font-size: 1.4vmax;
+}
+@keyframes down {
+    from { top: 0%; }
+    to { top: 25vmax; }
+}

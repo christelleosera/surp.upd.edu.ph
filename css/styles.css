@@ -131,9 +131,10 @@
 	#dropdown li:hover{
 		background-color: #353739;
 	}
-	.menu-element:hover, .menu-element-last:hover {
+	.menu-element:hover, .menu-element-last:hover{
 		text-shadow: 2px 2px #353739;
-		text-decoration: underline;
+
+		/*text-decoration: underline;*/
 	}
 	.menu-element:hover #dropdown{
 		display: block;
@@ -235,6 +236,12 @@
 		padding-bottom: 0;
 		transition: .5s bottom;
 		font-weight: 900;
+		transition-property: background-color;
+  		transition-duration: 0.7s;
+  		transition-timing-function: linear;
+	}
+	figure.slider figure figcaption:hover{
+		background-color: rgba(1, 44,21, 0.8);
 	}
 	figure.slider figure figcaption .subcap {
 		font-size: 0.9vmax;
@@ -258,6 +265,7 @@
 	}
 	figure.slider figure figcaption .slider-read-more a:hover{
 		text-decoration: underline;
+		text-shadow: 1px 1px #014421;
 	}
 
 /*	.read-more{
@@ -275,10 +283,8 @@
 		letter-spacing: 0.75;
 		font-size: 1.2vmax;
 	}
-	#news .read-more a:hover,
-	#announcements .read-more a:hover{
-		text-decoration: underline;
-	}
+	
+	
 
 	.block-title{
 		text-align: center;
@@ -293,7 +299,7 @@
 		margin-top: 1vmax;
 	}
 
-	#news-title, #announcements-title, #news-archive-title, #vision-title, #gallery-title{
+	#news-title, #announcements-title, #news-archive-title, #vision-title, #gallery-title, #message-title{
 		background-color: #303234;
 		width: 100%;
 		margin-bottom: 1vmax;
@@ -332,6 +338,13 @@
 		text-decoration: none;
 		letter-spacing: 0.75;
 		font-size: 1.2vmax;
+		transition-property: color;
+  		transition-duration: 0.5s;
+  		transition-timing-function: linear;
+	}
+	#announcements .read-more a:hover{
+
+		color: #014421;
 	}
 
 	pre{
@@ -404,13 +417,13 @@
 	.news-archive-item:hover,
 	#news-archive-list-container li:nth-child(odd):hover{
 		background-color: #014421;
-		text-decoration: underline;
 	}
 	#msg-dean{
 		width: 80%;
 		margin-top: 1vmax;
 		margin-left: 1vmax;
 		position: relative;
+
 	}
 	#dean-img{
 		width: 100%;
@@ -423,6 +436,9 @@
 		width: 100%;
 		background-color: rgba(78,78,78, 0.7);
 		text-align: right;
+		transition-property: background-color;
+  		transition-duration: 0.7s;
+  		transition-timing-function: linear;
 	}
 	#dean-img-text a{
 		text-decoration: none;
@@ -431,9 +447,11 @@
 		font-weight: 600;
 		letter-spacing: 1.5;
 	}
-	#dean-img-text a:hover{
-		text-decoration: underline;
+	#dean-img-text:hover{
+		background-color: #014421;
+		
 	}
+	
 	#vision{
 		width: 80%;
 		margin-top: 1vmax;
@@ -470,10 +488,10 @@
 		position: relative;
 		height: 6vmax;
 		width: 100%;
-		background: -webkit-linear-gradient(left, #7B1113 , #014421); /* For Safari 5.1 to 6.0 */
-	  	background: -o-linear-gradient(right, #7B1113 , #014421); /* For Opera 11.1 to 12.0 */
-	  	background: -moz-linear-gradient(right, #7B1113 , #014421); /* For Firefox 3.6 to 15 */
-	  	background: linear-gradient(to right, #7B1113 , #014421); /* Standard syntax */
+		background: -webkit-linear-gradient(top #7B1113 , #014421); /* For Safari 5.1 to 6.0 */
+	  	background: -o-linear-gradient(bottom, #7B1113 , #014421); /* For Opera 11.1 to 12.0 */
+	  	background: -moz-linear-gradient(bottom, #7B1113 , #014421); /* For Firefox 3.6 to 15 */
+	  	background: linear-gradient(to bottom, #7B1113 , #014421); /* Standard syntax */
 		vertical-align: middle;
 		display: table;
 		z-index: -1;
