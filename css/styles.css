@@ -15,7 +15,7 @@
 
 	#header{
 		position: relative;
-		height: 25vmax;
+		height: 20vmax;
 		width: 100%;
 		background: -webkit-linear-gradient(left, #7B1113 , #014421); /* For Safari 5.1 to 6.0 */
 	  	background: -o-linear-gradient(right, #7B1113 , #014421); /* For Opera 11.1 to 12.0 */
@@ -119,9 +119,12 @@
 	#dropdown li{
 		padding: 0.5vmax 0 0.5vmax 0;
 		height: auto;
-		transition-property: background-color;
-  		transition-duration: 0.5s;
-  		transition-timing-function: linear;
+
+  		-webkit-transition: background-color 0.5s linear;
+        -moz-transition: background-color 0.5s linear;
+        -o-transition: background-color 0.5s linear;
+        -ms-transition: background-color 0.5s linear;
+        transition: background-color 0.5s linear;
 	}
 	#dropdown a{
 		white-space:nowrap;
@@ -150,7 +153,6 @@
 		position: relative;
 		display: table;
 		float: left;
-
 		margin-bottom: 5vmax;
 	}
 	#news{
@@ -176,10 +178,31 @@
 	figure.slider {
 		position: relative;
 		width: 500%;
-		-webkit-animation: slide 90s forwards 10s infinite;
-		animation: fadeinslide 90s forwards 10s infinite;
+		-webkit-animation: slidy 30s forwards;
+		animation: slidy 30s forwards;
 		overflow: hidden;
 	}
+	@-webkit-keyframes slidy {
+		0% {left: 0%;}
+		7% {left: 0%;}
+		10% {left: -100%;}
+		17% {left: -100%;}
+		20% {left: -200%;}
+		27% {left: -200%;}
+		30% {left: -300%;}
+		37% {left: -300%;}
+		40% {left: -400%;}
+		50% {left: -400%;}
+		57% {left: -400%;}
+		60% {left: -300%;}
+		67% {left: -300%;}
+		70% {left: -200%;}
+		77% {left: -200%;}
+		80% {left: -100%;}
+		87% {left: -100%;}
+		90% {left: 0%;}
+		100% {left: 0%;}
+		}
 	@-webkit-keyframes slide{
 		0% {left: 0%;}
 		7% {left: 0%;}
@@ -201,7 +224,7 @@
 		90% {left: 0%;}
 		100% {left: 0%;}
 	}
-	@moz-keyframes slide {
+	@moz-keyframes slidy {
 		0% {left: 0%;}
 		7% {left: 0%;}
 		10% {left: -100%;}
@@ -223,22 +246,28 @@
 		100% {left: 0%;}
 	}
 	figure.slider figure {
-		width: 19.9%;
+		width: 20%;
 		height: 100%;
+		float: left;
 		display: inline-block;
 		position: inherit;
 	}
 	figure.slider figure figcaption {
 		position: absolute; bottom: 0;
 		background: rgba(0,0,0,0.7);
-		color: #fff; width: 99%;
+		color: #fff; width: 100% - 0.6vmax;
 		font-size: 2vmax; padding: .6vmax;
 		padding-bottom: 0;
-		transition: .5s bottom;
 		font-weight: 900;
-		transition-property: background-color;
-  		transition-duration: 0.7s;
-  		transition-timing-function: linear;
+  		-webkit-transition: background-color 0.7s linear;
+        -moz-transition: background-color 0.7s linear;
+        -o-transition: background-color 0.7s linear;
+        -ms-transition: background-color 0.7s linear;
+        transition: background-color 0.7s linear;
+	}
+	figure.slider figure figcaption a{
+		color: #fff;
+		text-decoration: none;
 	}
 	figure.slider figure figcaption:hover{
 		background-color: rgba(1, 44,21, 0.8);
@@ -306,13 +335,15 @@
 		padding: 0.5vmax 0 0.5vmax 0;
 	}
 	.announcement-prev{
-		border-bottom: #7B1113 1px solid;
-		margin-bottom: 0.5vmax;
+		/*border-bottom: #7B1113 1px solid;*/
+		margin-bottom: 1.2vmax;
+		box-shadow: 1px 1px 5px #707274;
+		padding: 0.8vmax;
 	}
 	.announcement-title{
 		color: #7B1113;
 		font-weight: 900;
-		font-size: 1.5vmax;
+		font-size: 1.6vmax;
 	}
 	.announcement-date{
 		color: #7B1113;
@@ -338,15 +369,15 @@
 		text-decoration: none;
 		letter-spacing: 0.75;
 		font-size: 1.2vmax;
-		transition-property: color;
-  		transition-duration: 0.5s;
-  		transition-timing-function: linear;
+  		-webkit-transition: color 0.5s linear;
+        -moz-transition: color 0.5s linear;
+        -o-transition: color 0.5s linear;
+        -ms-transition: color 0.5s linear;
+        transition: color 0.5s linear;
 	}
 	#announcements .read-more a:hover{
-
 		color: #014421;
 	}
-
 	pre{
 		white-space: pre-wrap;       /* css-3 */
  		white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
@@ -364,7 +395,7 @@
 		width: 74.75%;
 		text-align: center;
 		background-color: #303234;
-		padding: 0.2vmax 1vmax 1vmax 1vmax;
+		padding: 0vmax 1vmax 1vmax 1vmax;
 		margin-left: 1vmax;
 	}
 	#timer-text{
@@ -406,9 +437,11 @@
 		padding: 1vmax 1vmax 1vmax 1vmax;
 		font-size: 1.2vmax;
 		font-weight: 400;
-		transition-property: background-color;
-  		transition-duration: 0.7s;
-  		transition-timing-function: linear;
+  		-webkit-transition: background-color 0.7s linear;
+        -moz-transition: background-color 0.7s linear;
+        -o-transition: background-color 0.7s linear;
+        -ms-transition: background-color 0.7s linear;
+        transition: background-color 0.7s linear;
 	}
 	.news-archive-item a{
 		text-decoration: none;
@@ -436,9 +469,12 @@
 		width: 100%;
 		background-color: rgba(78,78,78, 0.7);
 		text-align: right;
-		transition-property: background-color;
-  		transition-duration: 0.7s;
-  		transition-timing-function: linear;
+  		-webkit-transition: background-color 0.7s linear;
+        -moz-transition: background-color 0.7s linear;
+        -o-transition: background-color 0.7s linear;
+        -ms-transition: background-color 0.7s linear;
+        transition: background-color 0.7s linear;
+
 	}
 	#dean-img-text a{
 		text-decoration: none;
@@ -511,6 +547,12 @@
 	}
 	#timer-container{
 		width: 84.5%;
+	}
+	.header-title{
+		font-size: 3.8vw;
+	}
+	.header-subtitle{
+		font-size: 2.8vw;
 	}
 	#updlogo, #surplogo{
 		display: none;

@@ -1,14 +1,13 @@
 #message{
 	float: right;
 	width: 90%;
-	animation: down 1s ease forwards;
 }
 
 #message-dean-img-container{
 	float: left;
 	margin: 0 1vmax 0 0;
-	background-color: #E0E0E0;
-	padding: 1vmax;
+	background-color: #EAEAEA;
+	padding: 0.5vmax;
 }
 #message-dean-img{
 	width: 25vmax;
@@ -27,3 +26,10 @@
     from { top: 0%; }
     to { top: 25vmax; }
 }
+
+
+@media screen and (orientation:portrait) {
+    #message{
+    	width: 100%;
+    }
+ }
