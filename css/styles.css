@@ -67,12 +67,13 @@
 	  	display: table;
 	  	background-color: #555759;
 	  	width: 100%;
+	  	padding: 0;
 	}
 
 	#mainmenu {
 		width: 100%;
 		margin: 0 auto;
-		padding: 5px;
+		/*padding: 5px;*/
 		text-align: center;
 		font-size: 1.3vmax;
 		letter-spacing: 0;
@@ -86,13 +87,17 @@
 		padding-left: 2vw;
 		padding-right: 2vw;
 		border-right: 2px solid #FFF;
-		border-spacing: 0 0 0 0 ;
+		border-spacing: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 	.menu-element-last{
 		display: inline-block;
 		position: relative;
 		padding-left: 2vw;
 		padding-right: 2vw;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 	#menu-container a {
 		color: #FFF;
@@ -136,6 +141,8 @@
 	}
 	.menu-element:hover, .menu-element-last:hover{
 		text-shadow: 2px 2px #353739;
+		border-bottom: 1px solid #FFF;
+		
 
 		/*text-decoration: underline;*/
 	}
