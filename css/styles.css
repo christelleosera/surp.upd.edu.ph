@@ -516,6 +516,9 @@
 		margin-left: 1vmax;
 		overflow: scroll;
 	}
+	.fb-like{
+		visibility: hidden;
+	}
 	#footer{
 		width: 100%;
 		display: table;
@@ -568,5 +571,11 @@
 	}
 	#updlogo, #surplogo{
 		display: none;
+	}
+	.fb-page{
+		visibility: hidden;
+	}
+	.fb-like{
+		visibility: visible;
 	}
  }
