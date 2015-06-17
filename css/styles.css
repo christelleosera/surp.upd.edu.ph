@@ -515,9 +515,10 @@
 		margin-top: 1vmax;
 		margin-left: 1vmax;
 		overflow: scroll;
+		margin-bottom: 3vmax;
 	}
 	.fb-like{
-		visibility: hidden;
+		display: none !important;
 	}
 	#footer{
 		width: 100%;
@@ -573,9 +574,9 @@
 		display: none;
 	}
 	.fb-page{
-		visibility: hidden;
+		display: none !important;
 	}
 	.fb-like{
-		visibility: visible;
+		display: block !important; 
 	}
  }
