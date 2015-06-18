@@ -15,7 +15,7 @@
 
 	#header{
 		position: relative;
-		height: 20vmax;
+		height: 15vmax;
 		width: 100%;
 		background: -webkit-linear-gradient(left, #7B1113 , #014421); /* For Safari 5.1 to 6.0 */
 	  	background: -o-linear-gradient(right, #7B1113 , #014421); /* For Opera 11.1 to 12.0 */
@@ -45,19 +45,18 @@
 
 	.header-title{
 		color: #FFF;
-		font-size: 3.4vmax;
-		
+		font-size: 2.1vmax;
 		letter-spacing: 0.75;
 		text-align: center;
 	}
 
 	.header-subtitle{
 		color: #FFF;
-		font-size: 1.8vmax;
+		font-size: 1.3vmax;
 	}
 
 	#updlogo, #surplogo { 
-		height: 6vmax;
+		height: 3vmax;
 		width: auto;
 		margin: 0 15px 0 15px;
 	}
@@ -75,7 +74,7 @@
 		margin: 0 auto;
 		/*padding: 5px;*/
 		text-align: center;
-		font-size: 1.3vmax;
+		font-size: 1.1vmax;
 		letter-spacing: 0;
 		font-weight: 600;
 		padding: 0;
@@ -86,10 +85,10 @@
 		position: relative;
 		padding-left: 2vw;
 		padding-right: 2vw;
-		border-right: 2px solid #FFF;
+		border-right: 2px solid #8E8E8E;
 		border-spacing: 0;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		padding-top: 4px;
+		padding-bottom: 4px;
 	}
 	.menu-element-last{
 		display: inline-block;
@@ -108,7 +107,7 @@
 	#dropdown {
 		display: none;
 		position: absolute;
-		top: 2.7vmax;
+		top: 2.4vmax;
 		z-index: 1000;
 		list-style: none;
 		padding: 0;
@@ -337,7 +336,7 @@
 		margin-top: 1vmax;
 	}
 
-	#news-title, #announcements-title, #news-archive-title, #vision-title, #gallery-title, #message-title{
+	#news-title, #announcements-title, #news-archive-title, #vision-title, #gallery-title, #message-title, #admissions-title, .block-title{
 		background-color: #303234;
 		width: 100%;
 		margin-bottom: 1vmax;
@@ -546,10 +545,59 @@
 		vertical-align: middle;
 		display: table;
 		z-index: -1;
-
-	
 	}
 
+	.banner-container{
+		height: 25vmax;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%; 
+	}
+	#banner-container-offerings-admissions{
+		background-image: url('../_img/banner-offerings-admissions.JPG');
+	}
+	#admissions, #course-descriptions, #offerings{
+		float: right;
+		width: 90%;
+	}
+	#downloads{
+		width: 80%;
+		margin-left: 1vmax;
+	}
+	#downloads-title{
+		margin-bottom: 0;
+	}
+	#downloads-list{
+		padding: 0;
+    	list-style-type: none;
+    	background-color: #888888;
+    	margin: 0;
+	}
+	#downloads-list li{
+		padding: 1vmax 1vmax 1vmax 1vmax;
+		font-size: 1.2vmax;
+		font-weight: 400;
+  		-webkit-transition: background-color 0.7s linear;
+        -moz-transition: background-color 0.7s linear;
+        -o-transition: background-color 0.7s linear;
+        -ms-transition: background-color 0.7s linear;
+        transition: background-color 0.7s linear;
+	}
+	#downloads-list li a{
+		text-decoration: none;
+		color: #FFF;
+	}
+	#downloads-list li:hover,
+	#downloads-list li:nth-child(odd):hover{
+		background-color: #014421;
+	}
+	#banner-container-offerings-course-descriptions{
+		background-image: url('../_img/banner-offerings-course-descriptions.JPG');
+	}
+	#banner-container-offerings{
+		background-image: url('../_img/banner-offerings.JPG');
+	}
 @media screen and (max-width: 750px) {
 	
 }
@@ -557,7 +605,7 @@
     #news, #announcements {
 		width: 100%;
 	}
-	#msg-dean, #news-archive, #vision, #gallery{
+	#msg-dean, #news-archive, #vision, #gallery, #downloads{
 		width: 95%;
 	}
 	#timer-container{
