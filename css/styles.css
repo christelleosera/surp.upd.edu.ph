@@ -509,6 +509,9 @@
 		margin-top: 0.25vmax;
 		text-align: justify;
 	}
+	#gallery-title{
+		display: inline-block;
+	}
 	#gallery{
 		width: 80%;
 		margin-top: 1vmax;
