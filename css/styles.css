@@ -601,8 +601,13 @@
 	#banner-container-offerings{
 		background-image: url('../_img/banner-offerings.JPG');
 	}
-@media screen and (max-width: 750px) {
-	
+@media screen and (max-width: 640px) {
+	.fb-page{
+		display: none !important;
+	}
+	.fb-like{
+		display: block !important; 
+	}
 }
 @media screen and (orientation:portrait) {
     #news, #announcements {
@@ -624,10 +629,5 @@
 	#updlogo, #surplogo{
 		display: none;
 	}
-	.fb-page{
-		display: none !important;
-	}
-	.fb-like{
-		display: block !important; 
-	}
+	
  }
