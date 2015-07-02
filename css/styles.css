@@ -519,7 +519,7 @@
 		width: 80%;
 		margin-top: 1vmax;
 		margin-left: 1vmax;
-		overflow: scroll;
+		overflow: hidden;
 		margin-bottom: 3vmax;
 	}
 	#footer{
@@ -652,6 +652,7 @@
 	#banner-container-research-agenda{
 		background-image: url('../_img/banner-research-agenda.JPG');
 	}
+
 @media screen and (max-width: 640px) {
 
 }
