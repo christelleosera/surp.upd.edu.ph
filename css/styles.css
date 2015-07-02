@@ -89,14 +89,16 @@
 		border-spacing: 0;
 		padding-top: 4px;
 		padding-bottom: 4px;
+		width: 11vw;
 	}
 	.menu-element-last{
 		display: inline-block;
 		position: relative;
 		padding-left: 2vw;
 		padding-right: 2vw;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		width: 11vw;
 	}
 	#menu-container a {
 		color: #FFF;
@@ -107,7 +109,7 @@
 	#dropdown {
 		display: none;
 		position: absolute;
-		top: 2.4vmax;
+		top: 2.5vmax;
 		z-index: 1000;
 		list-style: none;
 		padding: 0;
@@ -155,6 +157,7 @@
 		margin: 0 auto;
 		margin-top: 1vmax;
 		height: 100%;
+		font-size: 1.3vmax;
 	}
 	#left-panel{
 		width: 65%;
@@ -560,15 +563,15 @@
 	#banner-container-offerings-admissions{
 		background-image: url('../_img/banner-offerings-admissions.JPG');
 	}
-	#admissions, #course-descriptions, #offerings{
+	#admissions, #course-descriptions, #offerings, #publications{
 		float: right;
 		width: 90%;
 	}
-	#downloads{
+	#downloads, #theses-dissertations{
 		width: 80%;
 		margin-left: 1vmax;
 	}
-	#downloads-title{
+	#downloads-title, #theses-dissertations-title{
 		margin-bottom: 0;
 	}
 	#downloads-list{
@@ -576,6 +579,11 @@
     	list-style-type: none;
     	background-color: #888888;
     	margin: 0;
+    	height: 25vmax;
+		overflow-y: scroll;
+	}
+	#downloads #downloads-list{
+		height: auto;
 	}
 	#downloads-list li{
 		padding: 1vmax 1vmax 1vmax 1vmax;
@@ -586,13 +594,17 @@
         -o-transition: background-color 0.7s linear;
         -ms-transition: background-color 0.7s linear;
         transition: background-color 0.7s linear;
+        color: #FFF;
+	}
+	#downloads-list li:nth-child(odd) {
+		background-color: #787878;
 	}
 	#downloads-list li a{
 		text-decoration: none;
 		color: #FFF;
 	}
-	#downloads-list li:hover,
-	#downloads-list li:nth-child(odd):hover{
+	#downloads #downloads-list li:hover,
+	#downloads #downloads-list li:nth-child(odd):hover{
 		background-color: #014421;
 	}
 	#banner-container-offerings-course-descriptions{
@@ -601,6 +613,46 @@
 	#banner-container-offerings{
 		background-image: url('../_img/banner-offerings.JPG');
 	}
+	#banner-container-publications{
+		background-image: url('../_img/banner-publications.JPG');
+	}
+	#publications a{
+		color: #7B1113;
+		font-weight: 900;
+	}
+	.publication {
+		margin-bottom: 2.8vmax;
+		text-align: justify;
+	}
+
+	.publication-header{
+		color: #7B1113;
+		margin-bottom: 0.6vmax;
+	}
+	.publication-title{
+		font-size: 1.5vmax;
+		font-weight: 900;
+	}
+	#theses-dissertations-link{
+		background-color: rgba(01,44,21,0.7);
+		padding: 0.7vmax 0.5vmax 0.7vmax 0;
+		text-align: center;
+		-webkit-transition: background-color 0.5s linear;
+        -moz-transition: background-color 0.5s linear;
+        -o-transition: background-color 0.5s linear;
+        -ms-transition: background-color 0.5s linear;
+        transition: background-color 0.5s linear;
+	}
+	#theses-dissertations-link a {
+		color: #FFF;
+		text-decoration: none;
+		font-weight: 900;
+		font-size: 1.4vmax;
+	}
+	#theses-dissertations-link:hover {
+		background-color: rgba(01,44,21,0.9);
+	}
+
 @media screen and (max-width: 640px) {
 	.fb-page{
 		display: none !important;
@@ -628,6 +680,9 @@
 	}
 	#updlogo, #surplogo{
 		display: none;
+	}
+	.menu-element, .menu-element-last{
+		width: auto;
 	}
 	
  }
