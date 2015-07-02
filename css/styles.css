@@ -463,7 +463,7 @@
 	#news-archive-list-container li:nth-child(odd):hover{
 		background-color: #014421;
 	}
-	#msg-dean{
+	#msg-dean, #msg-dean-trainings{
 		width: 80%;
 		margin-top: 1vmax;
 		margin-left: 1vmax;
@@ -561,7 +561,7 @@
 	#banner-container-offerings-admissions{
 		background-image: url('../_img/banner-offerings-admissions.JPG');
 	}
-	#admissions, #course-descriptions, #offerings, #publications, #research-agenda{
+	#admissions, #course-descriptions, #offerings, #publications, #research-agenda, #trainings, #contact-us{
 		float: right;
 		width: 90%;
 	}
@@ -660,6 +660,26 @@
 		text-align: center !important;
 		display: none !important;
 	}
+	#msg-dean-trainings{
+		margin-top: 0;
+	}
+	.list-title{
+		font-weight: 900;
+		color: #7B1113;
+	}
+	#map-embed{
+		position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+	}
+	#map-embed iframe{
+		position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+	}
 @media screen and (max-width: 640px) {
 	.fb-page{
 		display: none !important;
@@ -669,10 +689,10 @@
 	}
 }
 @media screen and (orientation:portrait) {
-    #news, #announcements, #admissions, #publications, #research-agenda, #theses-dissertations {
+    #news, #announcements, #admissions, #publications, #research-agenda, #trainings, #contact-us {
 		width: 100%;
 	}
-	#msg-dean, #news-archive, #vision, #gallery, #downloads, #theses-like{
+	#msg-dean, #news-archive, #vision, #gallery, #downloads, #theses-like, #theses-dissertations, #msg-dean-trainings {
 		width: 95%;
 	}
 	#timer-container{
