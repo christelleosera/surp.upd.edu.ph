@@ -521,6 +521,7 @@
 		margin-left: 1vmax;
 		overflow: hidden !important;
 		margin-bottom: 3vmax;
+		text-align: center !important;
 	}
 	#footer{
 		width: 100%;
@@ -652,9 +653,16 @@
 	#banner-container-research-agenda{
 		background-image: url('../_img/banner-research-agenda.JPG');
 	}
-
+	.fb-like{
+		display: none !important;
+	}
 @media screen and (max-width: 640px) {
-
+	.fb-page{
+		display: none !important;
+	}
+	.fb-like{
+		display: block !important;
+	}
 }
 @media screen and (orientation:portrait) {
     #news, #announcements, #admissions, #publications, #research-agenda, #theses-dissertations {
