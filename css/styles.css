@@ -519,7 +519,7 @@
 		width: 80%;
 		margin-top: 1vmax;
 		margin-left: 1vmax;
-		overflow: hidden;
+		overflow: hidden !important;
 		margin-bottom: 3vmax;
 	}
 	#footer{
