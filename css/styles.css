@@ -653,7 +653,11 @@
 	#banner-container-research-agenda{
 		background-image: url('../_img/banner-research-agenda.JPG');
 	}
+	.fb-page{
+		text-align: center !important;
+	}
 	.fb-like{
+		text-align: center !important;
 		display: none !important;
 	}
 @media screen and (max-width: 640px) {
