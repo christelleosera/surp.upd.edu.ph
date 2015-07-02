@@ -522,9 +522,6 @@
 		overflow: scroll;
 		margin-bottom: 3vmax;
 	}
-	.fb-like{
-		display: none !important;
-	}
 	#footer{
 		width: 100%;
 		display: table;
@@ -563,11 +560,11 @@
 	#banner-container-offerings-admissions{
 		background-image: url('../_img/banner-offerings-admissions.JPG');
 	}
-	#admissions, #course-descriptions, #offerings, #publications{
+	#admissions, #course-descriptions, #offerings, #publications, #research-agenda{
 		float: right;
 		width: 90%;
 	}
-	#downloads, #theses-dissertations{
+	#downloads, #theses-dissertations, #theses-like{
 		width: 80%;
 		margin-left: 1vmax;
 	}
@@ -652,20 +649,17 @@
 	#theses-dissertations-link:hover {
 		background-color: rgba(01,44,21,0.9);
 	}
-
+	#banner-container-research-agenda{
+		background-image: url('../_img/banner-research-agenda.JPG');
+	}
 @media screen and (max-width: 640px) {
-	.fb-page{
-		display: none !important;
-	}
-	.fb-like{
-		display: block !important; 
-	}
+
 }
 @media screen and (orientation:portrait) {
-    #news, #announcements {
+    #news, #announcements, #admissions, #publications, #research-agenda, #theses-dissertations {
 		width: 100%;
 	}
-	#msg-dean, #news-archive, #vision, #gallery, #downloads{
+	#msg-dean, #news-archive, #vision, #gallery, #downloads, #theses-like{
 		width: 95%;
 	}
 	#timer-container{
