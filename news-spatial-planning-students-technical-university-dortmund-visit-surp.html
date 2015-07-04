@@ -16,13 +16,12 @@
  	<script>
 		$(function () {
 			$('#defaultCountdown').countdown({until: new Date('October 22, 2015 00:00')});
-			
 		});	
 	</script>
 
 
   </head>
-  <body>
+<body>
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
@@ -31,6 +30,7 @@
 		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=945157632184236";
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
+
     <div id="header">
     	<div id = "header-text">
 	    	<div id="header-up">
@@ -47,50 +47,56 @@
     		<div id="menu-container">
     			<ul id="mainmenu">
 					<li class="menu-element"><a href="index.html">HOME</a></li>
-					<li class="menu-element"><a href="#news">ABOUT SURP</a>
+					<li class="menu-element"><a href="about.html">ABOUT SURP</a>
 						<ul id="dropdown">
-							<li><a href="#">History</a></li>
-							<li><a href="#">Organization</a></li>
-							<li><a href="#">Former Deans</a></li>
-							<li><a href="#">Facilities</a></li>
-							<li><a href="#">Faculty</a></li>
+							<li><a href="history.html">History</a></li>
+							<li><a href="organization.html">Organization</a></li>
+							<li><a href="former-deans.html">Former Deans</a></li>
+							<li><a href="facilities.html">Facilities</a></li>
+							<li><a href="faculty.html">Faculty</a></li>
 						</ul>
 					</li>
-					<li class="menu-element"><a href="#contact">OFFERINGS</a>
+					<li class="menu-element"><a href="offerings.html">OFFERINGS</a>
 						<ul id="dropdown">
-							<li><a href="#">Admissions</a></li>
-							<li><a href="#">Course Description</a></li>
+							<li><a href="admissions.html">Admissions</a></li>
+							<li><a href="course-descriptions.html">Course Description</a></li>
 						</ul>
 					</li>
-					<li class="menu-element"><a href="#about">RESEARCH</a>
+					<li class="menu-element"><a href="">RESEARCH</a>
 						<ul id="dropdown">
-							<li><a href="#">Publications</a></li>
-							<li><a href="#">Research Agenda</a></li>
+							<li><a href="publications.html">Publications</a></li>
+							<li><a href="research-agenda.html">Research Agenda</a></li>
 						</ul>
 					</li>
-					<li class="menu-element"><a href="#about">TRAININGS</a></li>
-					<li class="menu-element-last"><a href="#about">CONTACT US</a></li>
+					<li class="menu-element"><a href="trainings.html">TRAININGS</a></li>
+					<li class="menu-element-last"><a href="contact-us.html">CONTACT US</a></li>
 				</ul>
     		</div>
     	
     	<div id="main">
     		<div id="left-panel">
     			<div id="news-body">
+    				<!-- START EDIT HERE -->
+    				<!-- PUT THE TITLE  -->
     				<div class="news-body-title">Spatial Planning Students of the Technical University of Dortmund visit SURP</div>
+    				<!-- PUT THE DATE. SAME FORMAT PLEEEEASE -->
     				<div class="news-body-date">March 5, 2015</div>
-    				<div class="news-img-container">
-    					<img class="news-img" src="_img/news/03022015-spatial.jpg">
-    				</div>
     				
+    				<!-- PUT THE BODY INSIDE P. PUT BR ON EVERY NEW LINE -->
     				<p>
     				The UP School of Urban and Regional Planning (UP SURP) continues to strengthen in institutional linkages with academic institutions both here and abroad through various academic activities. The school maintains its strong ties with the Technische Universitat Dortmund (TUDo) in Germany in the conduct of faculty, staff, and student exchanges, collaborative researches, lectures, and exchanges of academic information.</br></br>
 
-Fifteen (15) students from the Fakultät Raumplanung (Faculty of Spatial Planning) of TUDo will be in the country for almost a month as part of the study entitled “A Research by the Spatial Planning Students of the Technical University of Dortmund”. The group shall be working in collaboration with the Cities Development Initiative for Asia (CDIA) in the development of an M&E toolkit that will be utilized by CDIA in the monitoring and evaluation of its infrastructure projects. The students have scheduled visits to the cities of Valenzuela and Naga, where the toolkit will be tested, interviews will be conducted, and field tests will be done in the affected locales of both areas. Data from the field will then be utilized to improve the M&E toolkit.</br></br>
+Fifteen (15) students from the Fakultät Raumplanung (Faculty of Spatial Planning) of TUDo will be in the country for almost a month as part of the study entitled “A Research by the Spatial Planning Students of the Technical University of Dortmund”. The group shall be working in collaboration with the Cities Development Initiative for Asia (CDIA) in the development of an M&amp;E toolkit that will be utilized by CDIA in the monitoring and evaluation of its infrastructure projects. The students have scheduled visits to the cities of Valenzuela and Naga, where the toolkit will be tested, interviews will be conducted, and field tests will be done in the affected locales of both areas. Data from the field will then be utilized to improve the M&amp;E toolkit.</br></br>
 
-Following the field work, a presentation of the findings and the revised version of the M&E Toolkit will be made by the group on March 9, 2015 at 4:00PM, at the 3rd Floor Cariño Multi-Purpose Hall. As the presentation is open to all, interested parties may RSVP to (02) 926-2120.</br></br>
-
+Following the field work, a presentation of the findings and the revised version of the M&amp;E Toolkit will be made by the group on March 9, 2015 at 4:00PM, at the 3rd Floor Cariño Multi-Purpose Hall. As the presentation is open to all, interested parties may RSVP to (02) 926-2120.
+					<!-- NO BR AT THE LAST PARAGRAPH. CLOSE P -->
     				</p>
+    				<!-- CLOSE P WHENEVER THERE'S AN IMAGE -->
+    				<!-- SAVE IMAGES IN THE _IMG/NEWS FOLDER. THE FILE NAME OF THE IMAGE SHOULD BE THE FILE NAME OF THIS FILE. IF THERE'S MORE THAN 1 IMAGE, APPEND FILE NAME WITH -0/-1/-2. EXAMPLE: spatial-planning-students-technical-university-dortmund-visit-surp-0.jpg -->
+    				<img class="news-img" src="_img/news/spatial-planning-students-technical-university-dortmund-visit-surp.jpg">
+    				<!-- YOU CAN ADD MORE Ps AND IMGs HERE. JUST DON'T FORGET TO CLOSE -->
 
+    			<!-- DON'T EDIT ANYTHING BEYOND THIS POINT -->
     			</div>
     		</div>
 
@@ -106,22 +112,7 @@ Following the field work, a presentation of the findings and the revised version
 		    		<div id="dean-img-text"><a href="message-from-the-dean.html">MESSAGE FROM<br/>THE DEAN</a></div>
 	    		</div>
 	    	</div>
-	    	<div id="news-archive">
-	    		<div id="news-archive-title" class="block-title">NEWS ARCHIVE</div>
-	    		<div id="news-archive-list-container">
-	    			<ul id="news-archive-list">
-	    				<li class="news-archive-item"><a href="#">Spatial Planning Students of the Technical University of Dortmund visit SURP</a></li>
-	    				<li class="news-archive-item"><a href="#">50th Anniversary Public Lecture Series</a></li>
-	    				<li class="news-archive-item"><a href="#">Public Lecture Series: WHAT ARE THE CURRENT ISSUES IN URBAN RAIL PLANNING IN TOKYO?</a></li>
-	    				<li class="news-archive-item"><a href="#">2ND SEMESTER ACADEMIC YEAR 2014-2015 ADMISSION EXAM RESULTS</a></li>
-	    				<li class="news-archive-item"><a href="#">Founding Day Celebration – UP SURP@49: Reaching for Gold</a></li>
-	    				<li class="news-archive-item"><a href="#">UP-SURP celebrating its 49th Anniversary: 22 October 2014</a></li>
-	    				<li class="news-archive-item"><a href="#">UP-SURP Faculty Member Recognized as 2014 Most Outstanding Zambosurian for Academe</a></li>
-	    				<li class="news-archive-item"><a href="#">Visiting Japanese Professor to lecture on Urban Freight Policy Measures in Tokyo</a></li>
-	    				
-	    			</ul>
-	    		</div>
-	    	</div>
+	    	
 	    	
 	    	<div id="vision">
 		    	<div id="vision-title" class="block-title">VISION</div>
@@ -142,9 +133,9 @@ Protecting and advocating for the welfare of society -particularly the poor- and
 					</div>
 	    	</div>
 	    	<div id="gallery">
-					<div id="gallery-title" class="block-title">GALLERY</div>
-					<div class="fb-page" data-href="https://www.facebook.com/pages/UP-School-of-Urban-and-Regional-Planning/119740714761794" data-width="300" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/UP-School-of-Urban-and-Regional-Planning/119740714761794"><a href="https://www.facebook.com/pages/UP-School-of-Urban-and-Regional-Planning/119740714761794">UP School of Urban and Regional Planning</a></blockquote></div></div>
-					</div>
+					<div id="gallery-title" class="block-title">LIKE US ON FACEBOOK</div>
+					<div class="fb-page" data-href="https://www.facebook.com/pages/UP-School-of-Urban-and-Regional-Planning/119740714761794" data-width="100%" data-hieght="130" data-hide-cover="false" data-show-facepile="true" data-show-posts="false" data-adapt-container-width="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/UP-School-of-Urban-and-Regional-Planning/119740714761794"><a href="https://www.facebook.com/pages/UP-School-of-Urban-and-Regional-Planning/119740714761794">UP School of Urban and Regional Planning</a></blockquote></div></div>
+					<div class="fb-like" data-href="https://www.facebook.com/pages/UP-School-of-Urban-and-Regional-Planning/119740714761794" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
 	    	</div>
 
     	</div>
