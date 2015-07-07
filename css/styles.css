@@ -504,6 +504,8 @@
 		width: 80%;
 		margin-top: 1vmax;
 		margin-left: 1vmax;
+		box-shadow: 1px 1px 5px #707274;
+		padding: 0;
 	}
 	.vision-text{
 		color: #000;
@@ -511,6 +513,7 @@
 		font-size: 1vmax;
 		margin-top: 0.25vmax;
 		text-align: justify;
+		padding: 0.8vmax;
 	}
 	#gallery-title{
 		display: inline-block;
@@ -561,7 +564,7 @@
 	#banner-container-offerings-admissions{
 		background-image: url('../_img/banner-offerings-admissions.JPG');
 	}
-	#admissions, #course-descriptions, #offerings, #publications, #research-agenda, #trainings, #contact-us{
+	#admissions, #course-descriptions, #offerings, #publications, #research-agenda, #trainings, #contact-us, #about, #organization, #history, #faculty, #former-deans{
 		float: right;
 		width: 90%;
 	}
@@ -680,6 +683,67 @@
         width: 100% !important;
         height: 100% !important;
 	}
+	#banner-about{
+		background-image: url('../_img/banner-about.JPG');
+		background-position: 50% 60%;
+	}
+	#banner-organization{
+		background-image: url('../_img/banner-organization.JPG');
+	}
+	#organization strong{
+		color: #7B1113;
+	}
+	#banner-history{
+		background-image: url('../_img/banner-history.JPG');
+	}
+	#history {
+		text-align: justify;
+	}
+	#history a{
+		color: #7B1113;
+		font-weight: 900;
+	}
+	#banner-faculty{
+		background-image: url('../_img/banner-faculty.JPG');
+	}
+	#faculty strong{
+		color: #7B1113;
+		font-weight: 900;
+		display: block;
+		margin-bottom: 5px;
+		font-size: 1.6vmax;
+	}
+	#banner-former-deans{
+		background-image: url('../_img/banner-former-deans.JPG');
+		background-size: 100% 100%;
+	}
+	#former-deans a{
+		display: block;
+		color: #7B1113;
+		font-weight: 900;
+		font-size: 1.6vmax;
+		text-decoration: none;
+	}
+	.former-dean-description{
+		font-size: 1.2vmax;
+		margin-top: 0.5vmax;
+		max-height: 0;
+		overflow: hidden;
+		box-shadow: 0 4px 2px -2px gray;
+
+		-webkit-transition: max-height 0.5s linear;
+        -moz-transition: max-height 0.5s linear;
+        -o-transition: max-height 0.5s linear;
+        -ms-transition: max-height 0.5s linear;
+        transition: max-height 0.5s linear;
+	}
+	#former-deans #icon-down, #former-deans #icon-up{
+		height: 1.6vmax;
+		vertical-align: bottom;
+	}
+	#former-deans #icon-up{
+		display: none;
+	}
 @media screen and (max-width: 640px) {
 	.fb-page{
 		display: none !important;
@@ -689,7 +753,7 @@
 	}
 }
 @media screen and (orientation:portrait) {
-    #news, #announcements, #admissions, #publications, #research-agenda, #trainings, #contact-us {
+    #news, #announcements, #admissions, #publications, #research-agenda, #trainings, #contact-us, #about, #organization, #history, #faculty, #former-deans{
 		width: 100%;
 	}
 	#msg-dean, #news-archive, #vision, #gallery, #downloads, #theses-like, #theses-dissertations, #msg-dean-trainings {
