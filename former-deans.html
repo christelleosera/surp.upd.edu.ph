@@ -16,16 +16,16 @@
 			$('#defaultCountdown').countdown({until: new Date('October 22, 2015 00:00')});
 			
 		});	
-		function show_hide(elem, elem2) {
-			if(document.getElementById(elem).style.display != "none"){
-	   		 	document.getElementById(elem2).style.maxHeight = "900px";
-	   		 	document.getElementById("icon-down").style.display = "none";
-	   		 	document.getElementById("icon-up").style.display = "inline";
+		function show_hide(icon_down, elem2, icon_up) {
+			if(document.getElementById(icon_down).style.display != "none"){
+	   		 	document.getElementById(elem2).style.maxHeight = "1500px";
+	   		 	document.getElementById(icon_down).style.display = "none";
+	   		 	document.getElementById(icon_up).style.display = "inline";
 	   		}
 	   		else {
 	   			document.getElementById(elem2).style.maxHeight = 0;
-	   			document.getElementById("icon-down").style.display = "inline";
-	   			document.getElementById("icon-up").style.display = "none";
+	   			document.getElementById(icon_down).style.display = "inline";
+	   			document.getElementById(icon_up).style.display = "none";
 	   		 	
 			}
 	   	}
@@ -93,7 +93,7 @@
     				<div id="former-deans-title" class="block-title">FORMER DEANS</div>
     				<div>
     				<div id="cabrido" class="former-dean">
-    				<a onclick="show_hide('icon-down', 'cabrido-description')">Dr. Candido A. Cabrido Jr. <img id="icon-down" src="_img/icon-down.png"><img id="icon-up" src="_img/icon-up.png"></a>
+    				<a onclick="show_hide('cabrido-icon-down', 'cabrido-description', 'cabrido-icon-up')">Dr. Candido A. Cabrido Jr. <img class= "icon-down" id="cabrido-icon-down" src="_img/icon-down.png"><img class="icon-up" id="cabrido-icon-up" src="_img/icon-up.png"></a>
 Term of Office: 2007-2012<br/>
 <div id="cabrido-description" class="former-dean-description">
 SURP in the UP CENTENNIAL<br/>
@@ -127,8 +127,41 @@ Strengthen and expand linkages and networks with international organizations and
 </div>
 
 <br/>
-<a href="">Dr. Primitivo C. Cal</a>
+<div id="cal" class="former-dean">
+<a onclick="show_hide('cal-icon-down', 'cal-description', 'cal-icon-up')">Dr. Primitivo C. Cal <img class= "icon-down" id="cal-icon-down" src="_img/icon-down.png"><img class="icon-up" id="cal-icon-up" src="_img/icon-up.png"></a>
 Term of Office: 2004-2007<br/>
+<div id="cal-description" class="former-dean-description">
+Dr. Primitivo C. Cal envisioned the School to be a center of excellence in the field of urban and regional planning– an internationally renowned urban and regional planning educational institution with excellent academic programs, faculty members, facilities and support services.<br/>
+<br/>
+His mission during his term, aside from making available a pool of capable professional urban and regional planners, is that the School provides assistance in the improvement of human settlements and the environment through coordinated and comprehensive development studies and plans; strengthen and assist government agencies and private organizations in studying and solving problems of planning and development; and facilitate the implementation of development proposals at the national, regional, and local levels.<br/>
+<br/>
+The thrust of Dr. Cal’s administration takes off from the Ten-Year Strategic Plan of SURP for 2003 to 2013. It saw the need to improve graduate programs, research, and delivery of extension services.<br/>
+<br/>
+The following objectives have been identified in relation to the three-fold functions of the University:
+<ul>
+<li>Focus on the upgrading of existing graduate programs instead of creating new ones.</li>
+<li>Improve the magnitude and quality of research and publication of research output.</li>
+<li>Improve the delivery of training and other extension services.</li>
+</ul>
+In the formulation of the Action Plan, the vision of the University was taken into account, as well as advancements in science and technology, globalization, including trends in Urban and Regional Planning education and, existing and future urban and regional needs in the country and Asia.<br/>
+<br/>
+The improvement of the School’s facilities is also programmed in the succeeding years to create an excellent academic environment. The School takes advantage of the great strides in technology, particularly information technology. As spatial planning is a major part of its curriculum, the School equips itself with modern software and hardware to support it. It adapts to the advancement in computer technology as well as through the establishment of collaborative linkages with individuals and institutions like the UP SURP Alumni and Friends Foundation, Inc. (SAFFI) for assistance and support. In fact, the SAFFI has donated funds for the new Spatial Planning Laboratory of the School.<br/>
+<br/>
+Under the tutelage of Dean Cal, reforms have been initiated in the School’s various divisions and units such as the implementation of a pro-active administration of theses and dissertations, the conversion of the School’s journal into a refereed journal and the development of more customized training programs.<br/>
+<br/>
+The aim of faculty recruitment is to achieve a desirable profile of faculty in terms of expertise and rank.<br/>
+<br/>
+All these initiatives are geared to accelerating the pace towards the attainment of the vision for the UP School of Urban and Regional Planning.<br/>
+<br/>
+As of 2005, the following have already been achieved by the present Administration:
+<br/>
+– Student Performance Indicators show that in the academic year 2005-2006, thirty two (32) students qualified for graduation after the second semester, while six (6) students qualified for the summer term 2005. For that, eleven (11) students qualified for college scholar status and six (6) for university scholar status. In the first semester of Academic Year 2005-2006, twenty seven (27) qualified for graduation.<br/>
+<br/>
+– With regards to Research and Publications, a total of eighteen (18) research projects were started, being continued, and completed by the faculty and staff of the School (Table 1). Of these projects, at least nine (9) were headed by a SURP faculty (as Project/Study Leader or Author). Funding information (amount and sources) and outputs specific to each of these projects are also indicated in Table 1. It may be noted that none of these projects were funded and/or administered by the UP Office of the Vice-Chancellor for Research and Development, while six (6) may be considered in-house research projects.<br/>
+<br/>
+</div>
+</div>
+
 <br/>
 <a href="">Prof. Dolores A. Endriga</a>
 Term of Office: 2001-2004<br/>

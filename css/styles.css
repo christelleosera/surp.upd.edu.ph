@@ -737,11 +737,11 @@
         -ms-transition: max-height 0.5s linear;
         transition: max-height 0.5s linear;
 	}
-	#former-deans #icon-down, #former-deans #icon-up{
+	#former-deans .icon-down, #former-deans .icon-up{
 		height: 1.6vmax;
 		vertical-align: bottom;
 	}
-	#former-deans #icon-up{
+	#former-deans .icon-up{
 		display: none;
 	}
 @media screen and (max-width: 640px) {
